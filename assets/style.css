@@ -450,10 +450,10 @@ footer a:hover {
 
 .navbar-brand img {
   height: 40px;
-  transform: scale(5); /* dobra o tamanho e mantém */
-  transform-origin: center center;
-  transition: transform 0.3s ease;
-  display: inline-block;
+  transform: scale(3); /* dobra o tamanho e mantém */
+  display: flex;
+  align-items: center;
+  overflow: visible; /* garante que nada seja cortado */
 }
 
 /* ===== NAVBAR ===== */
@@ -774,3 +774,4 @@ ul li i {
     filter: drop-shadow(0 8px 20px rgba(255,76,76,0.4)) brightness(1.05);
   }
 }
+
