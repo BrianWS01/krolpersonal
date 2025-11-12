@@ -454,6 +454,8 @@ footer a:hover {
   display: flex;
   align-items: center;
   overflow: visible; /* garante que nada seja cortado */
+margin-left: 20px; /* ajusta conforme quiser */
+
 }
 
 /* ===== NAVBAR ===== */
