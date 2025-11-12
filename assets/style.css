@@ -1,0 +1,548 @@
+body {
+  background: rgb(43, 42, 42);
+  color: #fff;
+
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(80deg, #791a1a, #161616); /* Gradiente chamativo */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 2px solid #ff4c4c;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #ff4c4c;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  footer {
+    padding: 30px 15px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+
+.hero {
+  height: 100vh;
+ background: linear-gradient(135deg, #252525, #aa3a3a, #2e0202) !important;
+  
+}
+
+.hero h1, .hero p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* ===== CARDS GERAIS ===== */
+.card {
+  border: none;
+  border-radius: 15px;                /* bordas arredondadas */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* sombra mais intensa */
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);  /* fundo levemente transparente */
+  color: #fff;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* leve zoom + elevação */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* ===== TÍTULOS DOS CARDS ===== */
+.card h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ff4c4c; /* cor chamativa para títulos */
+}
+
+/* ===== TEXTO DOS CARDS ===== */
+.card p {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+}
+
+/* ===== BOTÕES DOS CARDS ===== */
+.card .btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimento-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.depoimento-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+.depoimento-card p {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.depoimento-card small {
+  color: #ff4c4c;
+  font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .depoimento-card {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* ===== PLANOS ===== */
+#planos .card {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #ff4c4c;
+}
+
+#planos .card h5 {
+  color: #ff4c4c;
+}
+
+/* Listas nos cards de planos */
+#planos ul {
+  padding-left: 0;
+}
+
+#planos li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+#planos li::before {
+  content: '';
+  margin-right: 10px;
+}
+
+#planos li span {
+  margin-right: 10px;
+}
+
+
+.treino-card {
+   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #ff4c4c;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+}
+
+.treino-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+.treino-card h5 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.treino-card p {
+  font-size: 0.95rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.accordion-button {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ff4c4c;
+}
+
+.accordion-body {
+  color: #fff;
+  background: rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 15px;
+  font-size: 0.95rem;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .treino-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* ===== COMO FUNCIONA ===== */
+#funciona {
+  border-radius: 20px;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+}
+
+.funciona-card {
+ background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border: 2px solid #ff4c4c;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+}
+
+.funciona-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+.funciona-card h5 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.funciona-card p {
+  font-size: 0.95rem;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  #funciona {
+    padding: 40px 15px;
+  }
+  .funciona-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 767px) {
+  .card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* ===== ANIMAÇÕES ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== HERO PARALLAX ===== */
+.hero {
+  background: url('assets/imagens/assets/imagens/kROL_ICONE-removebg-preview.png') center/cover no-repeat fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* escurece um pouco a imagem */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== FADE CARD ===== */
+.fade-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-brand img {
+  height: 40px;
+  transform: scale(5); /* dobra o tamanho e mantém */
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparente */
+  backdrop-filter: blur(10px);      /* efeito blur */
+  transition: background 0.3s ease, padding 0.3s ease;
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px 0;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #ff4c4c;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff4c4c;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Botão toggler */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+.carrossel-infinito {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.carrossel-track {
+  display: flex;
+  gap: 40px;
+  min-width: 200%;
+  animation: scroll 25s linear infinite;
+}
+
+.carrossel-track img {
+  height: 60px;
+  width: auto;
+  filter: grayscale(100%) brightness(0) invert(1); /* deixa branquinho */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.carrossel-track img:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.hero-img {
+    position: relative;
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  justify-content: center; /* centraliza horizontalmente no mobile */
+}
+
+.hero-text {
+  flex: 0.8;
+  color: #fff;
+  display: flex;
+  flex-direction: column;   /* mantém texto + botão em coluna */
+  justify-content: center;  /* centraliza verticalmente */
+  align-items: center;      /* centraliza tudo horizontalmente */
+  text-align: center;       /* texto centralizado */
+}
+
+.hero-text h1,
+.hero-text p {
+  text-align: center;       /* garante que texto também fique centralizado */
+  margin: 0 0 15px 0;
+}
+
+.hero-text .btn {
+  align-self: center;       /* botão no centro horizontal */
+}
+
+.personal-img {
+  height: auto;
+  transform: scale(1.5);
+}
+
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 767px) {
+  .hero-text {
+    margin-top: 20px;
+  }
+}
+
+.sobre-card {
+  background: rgba(0,0,0,0.6);
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.7);
+  padding: 50px 50px; /* mais espaço interno */
+  max-width: 1200px;  /* largura maior para ocupar quase toda a tela */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sobre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+}
+
+.personal-about-img {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transform: rotate(-2deg);
+  transition: transform 0.3s;
+}
+
+.personal-about-img:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li i {
+  color: #ff4d4d;
+}
+
+.social-icons a {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff4d4d;
+  transform: scale(1.3);
+}
+
