@@ -31,16 +31,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsivo */
-@media (max-width: 767px) {
-  footer {
-    padding: 30px 15px;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-}
 
 
 .hero {
@@ -124,14 +114,6 @@ footer a:hover {
 .depoimento-card small {
   color: #ff4c4c;
   font-weight: 600;
-}
-
-/* Responsivo */
-@media (max-width: 991px) {
-  .depoimento-card {
-    min-height: auto;
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -229,25 +211,7 @@ footer a:hover {
   font-size: 0.95rem;
 }
 
-/* Responsivo */
-@media (max-width: 767px) {
-  .accordion-button {
-    font-size: 0.9rem;
-    padding: 12px;
-  }
 
-  .accordion-body {
-    font-size: 0.9rem;
-  }
-}
-
-
-/* Responsivo */
-@media (max-width: 991px) {
-  .treino-card {
-    margin-bottom: 20px;
-  }
-}
 
 /* ===== COMO FUNCIONA ===== */
 #funciona {
@@ -278,24 +242,9 @@ footer a:hover {
   font-size: 0.95rem;
 }
 
-/* Responsivo */
-@media (max-width: 767px) {
-  #funciona {
-    padding: 40px 15px;
-  }
-  .funciona-card {
-    margin-bottom: 20px;
-  }
-}
 
 
-/* RESPONSIVO */
-@media (max-width: 767px) {
-  .card {
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-}
+
 
 
 /* ===== ANIMAÇÕES ===== */
@@ -409,13 +358,6 @@ footer a:hover {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Responsivo */
-@media (max-width: 991px) {
-  .navbar-nav .nav-link {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
 
 
 .carrossel-infinito {
@@ -494,14 +436,6 @@ footer a:hover {
   transform: scale(1.5);
 }
 
-
-/* Ajuste para dispositivos menores */
-@media (max-width: 767px) {
-  .hero-text {
-    margin-top: 20px;
-  }
-}
-
 .sobre-card {
   background: rgba(0,0,0,0.6);
   border-radius: 25px;
@@ -546,3 +480,84 @@ ul li i {
   transform: scale(1.3);
 }
 
+/* ===== RESPONSIVO ===== */
+
+/* Tablets e telas médias */
+@media (max-width: 991px) {
+
+  /* Navbar: links empilhados */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  /* Depoimentos: altura automática */
+  .depoimento-card {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Treinos e cards */
+  .treino-card,
+  .funciona-card,
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  /* Hero: coluna, centralizado */
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .hero-text {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .hero-text .btn {
+    align-self: center;
+  }
+
+  .hero-img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Cards e seções: padding menor */
+  .card,
+  .treino-card,
+  .funciona-card,
+  .depoimento-card,
+  .faq-item {
+    padding: 15px;
+  }
+
+  /* FAQ: fontes menores */
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  /* Footer: padding menor */
+  footer {
+    padding: 30px 15px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
